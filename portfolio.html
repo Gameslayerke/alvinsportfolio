@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Alvins Munene showcasing Full Stack Web Development and Cybersecurity projects">
+    <title>Alvins Munene | Portfolio Projects</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="main-content light-mode">
+    <!-- Navigation (same as your existing navbar) -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home" class="logo-link">AM</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="toggle-ball"></div>
+        </div>
+        
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Portfolio Main Content -->
+    <main class="portfolio-container">
+        <!-- Hero Section -->
+        <section class="portfolio-hero" data-aos="fade-in">
+            <div class="hero-content">
+                <h1>My <span class="highlight">Projects</span></h1>
+                <p>Showcasing my expertise in Full Stack Development and Cybersecurity through real-world projects</p>
+            </div>
+        </section>
+
+        <!-- Projects Filter -->
+        <div class="filter-container" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+            <!-- Web Development Project 1 -->
+            <div class="project-card" data-category="web" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/commerce.jpg" alt="E-commerce Platform">
+                    <div class="project-links">
+                        <a href="https://alvins.vercel.app" class="demo-btn">Live Demo</a>
+                        <a href="https://github.com/Gameslayerke/alvins.git" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-featured online store with payment integration, inventory management, and admin dashboard.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Project 1 -->
+            <div class="project-card" data-category="cyber" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/download.png" alt="Network Security Tool">
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">View Details</a>
+                        <a href="#" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Network Vulnerability Scanner</h3>
+                    <p>Custom tool for identifying security weaknesses in network infrastructure with detailed reporting.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Nmap</span>
+                        <span>OWASP ZAP</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Project 2 -->
+            <div class="project-card" data-category="web" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/task.jpg" alt="Task Management App">
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Live Demo</a>
+                        <a href="#" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Task Management System</h3>
+                    <p>Collaborative project management tool with real-time updates and team communication features.</p>
+                    <div class="tech-stack">
+                        <span>Vue.js</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                        <span>Socket.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Project 2 -->
+            <div class="project-card" data-category="cyber" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/download.png" alt="Security Dashboard">
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">View Details</a>
+                        <a href="#" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Security Monitoring Dashboard</h3>
+                    <p>Centralized dashboard for monitoring security events across multiple systems with alerting.</p>
+                    <div class="tech-stack">
+                        <span>ELK Stack</span>
+                        <span>Python</span>
+                        <span>SIEM</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Project -->
+            <div class="project-card" data-category="mobile" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/fitness.jpg" alt="Fitness Tracker App">
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">App Store</a>
+                        <a href="#" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker Mobile App</h3>
+                    <p>Cross-platform mobile application for tracking workouts, nutrition, and health metrics.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Dart</span>
+                        <span>Health API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Project 3
+            <div class="project-card" data-category="web" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/web-project3.jpg" alt="CMS Platform">
+                    <div class="project-links">
+                        <a href="#" class="demo-btn">Live Demo</a>
+                        <a href="#" class="code-btn">View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Custom CMS Platform</h3>
+                    <p>Headless content management system with multi-tenant architecture and role-based access.</p>
+                    <div class="tech-stack">
+                        <span>Next.js</span>
+                        <span>NestJS</span>
+                        <span>GraphQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Cybersecurity Expertise Section -->
+        <section class="cyber-expertise" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Cybersecurity <span class="highlight">Specializations</span></h2>
+                <p>Areas of expertise and security-focused projects</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Penetration Testing</h3>
+                    <p>Conducted comprehensive security assessments for web and mobile applications.</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Coding</h3>
+                    <p>Implemented OWASP security best practices in all development projects.</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Security</h3>
+                    <p>Designed and implemented secure network architectures for enterprise systems.</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Threat Analysis</h3>
+                    <p>Developed threat models and mitigation strategies for critical applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="portfolio-cta" data-aos="fade-up">
+            <h2>Ready to Start Your Secure Project?</h2>
+            <p>Let's build something amazing together with security as a priority from day one.</p>
+            <a href="contact.html" class="cta-btn">Get In Touch</a>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/portfolio.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

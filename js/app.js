@@ -2,7 +2,7 @@
 const themeToggle = document.querySelector('.theme-toggle');
 const toggleBall = document.querySelector('.toggle-ball');
 const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('.nav-menu') || document.querySelector('.nav-links');
 const body = document.body;
 
 // Theme Toggle

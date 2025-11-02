@@ -1,0 +1,32 @@
+/* General Footer Styling */
+.footer {
+  background-color: #0d1117; /* Elegant dark tone */
+  color: #f0f0f0;            /* Soft white text */
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Optional container for layout consistency */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer text */
+.footer p {
+  margin: 0;
+  letter-spacing: 0.3px;
+  color: #b0b0b0;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for a subtle touch */
+.footer p:hover {
+  color: #00bcd4; /* Light cyan hover */
+}
